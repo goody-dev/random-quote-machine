@@ -1,38 +1,84 @@
 .App {
   text-align: center;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('./Assets/quote-background-img.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#quote-box {
+  background-color: rgba(0, 16, 32, 0.3);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  color: #F8C0D8;
+  font-family: Comic Sans MS;
+  font-weight: normal;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  /*border: 2px solid #C8A0D0;*/
+  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.7);
 }
-
-.App-link {
-  color: #61dafb;
+#quote-box:hover {
+  transform: scale(1.05);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#fetched-data {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+}
+#text {
+  text-align: left;
+  width: 100%;
+}
+#author {
+  text-align: right;
+  width: 100%;
+}
+#divider {
+  height: 1px;
+  border: none;
+  background-color: #FFFFFF;
+  width: 90%;
+}
+#actions {
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  font-size: 18px;
+}
+#new-quote {
+  border: 2px solid #F8C0D8;
+  border-radius: 5px;
+  color: #F8C0D8;
+  background-color: transparent;
+}
+#tweet-quote {
+  text-decoration: none;
+}
+#tweet-btn {
+  color: #001020;
+  border: none;
+  border-radius: 5px;
+  background-color: #F8C0D8;
 }
