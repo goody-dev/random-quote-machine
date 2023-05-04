@@ -3,7 +3,7 @@ import './App.css';
 //import bgImage from './Assets/quote-background-img.jpg';
 
 function App() {
-  const [quote, setQuote] = useState("It is more blessed to give than to recieve. By this shall all men know that you are my disciples.");
+  const [quote, setQuote] = useState("It is more blessed to give than to recieve");
   const [author, setAuthor] = useState("Jesus Christ");
   const fetchQuote = () => {
     const url = "https://dummyjson.com/quotes/random";
