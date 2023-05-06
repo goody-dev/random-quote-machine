@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-//import bgImage from './Assets/quote-background-img.jpg';
+import quoteIcon from './Assets/quote-svgrepo-com.svg';
 
 function App() {
   const [quote, setQuote] = useState("It is more blessed to give than to recieve");

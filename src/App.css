@@ -16,24 +16,20 @@
 }
 
 #quote-box {
-  background-color: rgba(0, 16, 32, 0.3);
+  background-color: rgba(0, 16, 32, 0.9);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  padding: 10px;
-  color: #F8C0D8;
+  padding: 15px;
+  color: #C8A0D0;
   font-family: Comic Sans MS;
   font-weight: normal;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 80%;
   max-width: 500px;
-  /*border: 2px solid #C8A0D0;*/
-  box-shadow: 3px 3px 6px 1px rgba(0, 0, 0, 0.7);
-}
-#quote-box:hover {
-  transform: scale(1.05);
+  box-shadow: 4px 4px 6px 1px rgba(0, 0, 0, 0.7);
 }
 #fetched-data {
   padding: 5px;
@@ -47,6 +43,7 @@
 #text {
   text-align: left;
   width: 100%;
+  font-weight: bold;
 }
 #author {
   text-align: right;
@@ -55,7 +52,7 @@
 #divider {
   height: 1px;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #F8C0D8;
   width: 90%;
 }
 #actions {
@@ -68,10 +65,11 @@
   font-size: 18px;
 }
 #new-quote {
-  border: 2px solid #F8C0D8;
+  border: 2px solid #C8A0D0;
   border-radius: 5px;
-  color: #F8C0D8;
+  color: #C8A0D0;
   background-color: transparent;
+  height: 37px;
 }
 #tweet-quote {
   text-decoration: none;
@@ -80,5 +78,17 @@
   color: #001020;
   border: none;
   border-radius: 5px;
-  background-color: #F8C0D8;
+  background-color: #C8A0D0;
+  height: 37px;
+}
+@media (hover: hover){
+  #tweet-btn:hover {
+    color: #C8A0D0;
+    background-color: #001020;
+    border: 2px solid #C8A0D0;
+  }
+  #new-quote:hover {
+    color: #001020;
+    background-color: #C8A0D0;
+  }
 }
